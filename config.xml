@@ -1,109 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns     = "http://www.w3.org/ns/widgets"
-        xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "cc.fovea.purchase.demo"
-        version   = "1.0.0">
-
-    <name>Hello Ads</name>
-
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="cc.fovea.purchase.demo" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>helloworld</name>
     <description>
-        Hello World sample application that shows ads.
+        A blank PhoneGap app.
     </description>
-
-    <author href="http://phonegap.com" email="support@phonegap.com">
-        Fovea
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        PhoneGap Team
     </author>
-
-    <!-- Define the main entry-point to the application -->
     <content src="index.html" />
-
-    <!-- Customize your app and platform with the preference element. -->
-    <preference name="DisallowOverscroll"         value="true" />
-
-    <!-- Define a specific version of PhoneGap to build into your app. -->
+    <access origin="*" />
     <preference name="phonegap-version"       value="cli-9.0.0" />
-
-    <!-- Plugins -->
-    <!-- Core plugins -->
-    <plugin name="cordova-plugin-battery-status"      source="npm" spec="~1.2.4" />
-    <plugin name="cordova-plugin-camera"              source="npm" spec="~2.4.1" />
-    <plugin name="cordova-plugin-media-capture"       source="npm" spec="~1.4.3" />
-    <plugin name="cordova-plugin-device"              source="npm" spec="~1.1.6" />
-    <plugin name="cordova-plugin-dialogs"             source="npm" spec="~1.3.3" />
-    <plugin name="cordova-plugin-file"                source="npm" spec="~4.3.3" />
-    <plugin name="cordova-plugin-geolocation"         source="npm" spec="~2.4.3" />
-    <plugin name="cordova-plugin-globalization"       source="npm" spec="~1.0.7" />
-    <plugin name="cordova-plugin-inappbrowser"        source="npm" spec="~1.7.1" />
-    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.3.3" />
-    <plugin name="cordova-plugin-vibration"           source="npm" spec="~2.1.5" />
-    <!-- plugin name="cordova-plugin-admob-frameworks"    source="npm" spec="~1.1.3" / -->
-    <!-- plugin name="cordova-facebook-audnet-sdk"        source="npm" / -->
     <plugin name="cordova-open-admob"                 source="npm" spec="~0.5.0" />
-    <icon src="res/icon.png" />
-
-    <!-- Define app icon and splashscreen for each platform. -->
-    <platform name="android">
-        <splash density="land-ldpi" src="res/screen/android/drawable-land-ldpi-screen.png" />
-        <splash density="land-mdpi" src="res/screen/android/drawable-land-mdpi-screen.png" />
-        <splash density="land-hdpi" src="res/screen/android/drawable-land-hdpi-screen.png" />
-        <splash density="land-xhdpi" src="res/screen/android/drawable-land-xhdpi-screen.png" />
-        <splash density="land-xxhdpi" src="res/screen/android/drawable-land-xxhdpi-screen.png" />
-        <splash density="land-xxxhdpi" src="res/screen/android/drawable-land-xxxhdpi-screen.png" />
-        <splash density="port-ldpi" src="res/screen/android/drawable-port-ldpi-screen.png" />
-        <splash density="port-mdpi" src="res/screen/android/drawable-port-mdpi-screen.png" />
-        <splash density="port-hdpi" src="res/screen/android/drawable-port-hdpi-screen.png" />
-        <splash density="port-xhdpi" src="res/screen/android/drawable-port-xhdpi-screen.png" />
-        <splash density="port-xxhdpi" src="res/screen/android/drawable-port-xxhdpi-screen.png" />
-        <splash density="port-xxxhdpi" src="res/screen/android/drawable-port-xxxhdpi-screen.png" />
-    </platform>
-
     <platform name="ios">
         <config-file target="*-Info.plist" parent="GADApplicationIdentifier">
           <string>ca-app-pub-8736727451487566~1022347731</string>
         </config-file>
     </platform>
-
-    <platform name="wp8">
-        <splash height="1280" platform="wp8" src="res/screen/wp8/screen-portrait.jpg" width="768" />
-    </platform>
-
-    <platform name="windows">
-        <splash height="300" platform="windows" src="res/screen/windows/SplashScreen.scale-100.png" width="620" />
-        <splash height="1920" platform="windows" src="res/screen/windows/SplashScreenPhone.scale-240.png" width="1152" />
-    </platform>
-
-    <!--
-        Define access to external domains.
-
-        <access />            - a blank access tag denies access to all external resources.
-        <access origin="*" /> - a wildcard access tag allows access to all external resource.
-
-        Otherwise, you can specify specific domains:
-    -->
-    <access origin="*" />
-    <!--
-       <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
-       <access origin="http://phonegap.com" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
-       <access origin="http://phonegap.com" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.
-    -->
-
-    <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
-    <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
-
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
-
 </widget>
