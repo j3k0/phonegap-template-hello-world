@@ -11,7 +11,7 @@
     <access origin="*" />
     <preference name="phonegap-version" value="cli-9.0.0" />
     <engine name="ios" spec="^5.0.1" />
-    <plugin name="cordova-open-admob" source="npm" spec="~0.4.1" />
+    <plugin name="cordova-open-admob" spec="https://github.com/j3k0/admob-google-cordova.git" />
     <platform name="ios">
         <config-file target="*-Info.plist" parent="GADApplicationIdentifier">
           <string>ca-app-pub-8736727451487566~1022347731</string>
