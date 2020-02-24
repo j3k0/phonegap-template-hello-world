@@ -18,4 +18,11 @@
           <string>ca-app-pub-8736727451487566~1022347731</string>
         </config-file>
     </platform>
+  <platform name="android">
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <meta-data
+        android:name="com.google.android.gms.ads.APPLICATION_ID"
+        android:value="ca-app-pub-8736727451487566~1022347731" />
+    </config-file>
+  </platform>
 </widget>
