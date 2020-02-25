@@ -1,11 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget
-  id="cc.fovea.purchase.demo.nc"
-  version="1.0.0"
-  versionCode="10000"
-  xmlns="http://www.w3.org/ns/widgets"
-  xmlns:gap="http://phonegap.com/ns/1.0"
->
+<widget id="cc.fovea.purchase.demo.nc" version="1.0.0" versionCode="10000" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>helloworld</name>
     <description>
         A blank PhoneGap app.
@@ -13,7 +7,6 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
-    <icon src="res/icon.png" />
     <content src="index.html" />
     <access origin="*" />
     <preference name="phonegap-version" value="cli-9.0.0" />
@@ -21,11 +14,13 @@
     <plugin name="cordova-open-admob" spec="https://github.com/j3k0/admob-google-cordova.git" />
     <!-- plugin name="cordova-plugin-admob-frameworks" spec="https://github.com/j3k0/cordova-plugin-admob-frameworks.git" -->
     <platform name="ios">
-        <config-file target="*-Info.plist" parent="GADApplicationIdentifier">
-          <string>ca-app-pub-8736727451487566~1022347731</string>
-        </config-file>
+      <icon src="res/icon.png" />
+      <config-file target="*-Info.plist" parent="GADApplicationIdentifier">
+        <string>ca-app-pub-8736727451487566~1022347731</string>
+      </config-file>
     </platform>
     <platform name="android">
+      <icon src="res/icon.png" />
       <config-file target="AndroidManifest.xml" parent="/manifest/application">
         <meta-data
           android:name="com.google.android.gms.ads.APPLICATION_ID"
