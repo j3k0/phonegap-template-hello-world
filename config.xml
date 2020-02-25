@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="cc.fovea.purchase.demo.nc" version="1.0.0" versionCode="10000" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" android-targetSdk="28">
+<widget id="cc.fovea.purchase.demo.nc" version="1.0.0" versionCode="10000" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" android-targetSdk="28">
     <name>helloworld</name>
     <description>
         A blank PhoneGap app.
@@ -20,11 +20,11 @@
       </config-file>
     </platform>
     <platform name="android">
-      <!-- config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <config-file target="AndroidManifest.xml" parent="/manifest/application">
         <meta-data
           android:name="com.google.android.gms.ads.APPLICATION_ID"
           android:value="ca-app-pub-8736727451487566~1022347731" />
-      </config-file -->
+      </config-file>
       <splash src="res/screen/android/drawable-land-ldpi-screen.png"      density="land-ldpi" />
       <splash src="res/screen/android/drawable-land-mdpi-screen.png"      density="land-mdpi" />
       <splash src="res/screen/android/drawable-land-hdpi-screen.png"      density="land-hdpi" />
