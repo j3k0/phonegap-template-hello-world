@@ -200,8 +200,9 @@ var app = {
                 interstitial: 'ca-app-pub-8736727451487566/6962673020'
             },
             android: {
-                banner: '',
-                interstitial: ''
+                // banner: 'ca-app-pub-3940256099942544/6300978111', // test banner
+                banner: 'ca-app-pub-8736727451487566/8260142860', // bbo banner with mediation
+                interstitial: 'ca-app-pub-3940256099942544/1033173712' // test interstitial
             }
         };
         var admobid;
